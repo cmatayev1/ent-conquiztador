@@ -9,7 +9,7 @@ export default function Home() {
           Завоюй карту Казахстана знаниями
         </p>
         <p className="text-slate-400 text-sm">
-          Coming soon — игра запускается.
+          Coming soon — игра запускается Che tam brat.
         </p>
       </div>
     </main>
