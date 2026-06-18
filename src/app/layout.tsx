@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
+import ConvexClientProvider from "./ConvexClientProvider";
+import StoreUser from "./StoreUser";
 import Header from "./Header";
 import "./globals.css";
 
@@ -15,12 +17,15 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="ru">
-        <body className="bg-slate-950 text-white antialiased">
-          <Header />
-          {children}
-        </body>
-      </html>
+      <ConvexClientProvider>
+        <html lang="ru">
+          <body className="bg-slate-950 text-white antialiased">
+            <StoreUser />
+            <Header />
+            {children}
+          </body>
+        </html>
+      </ConvexClientProvider>
     </ClerkProvider>
   );
 }
