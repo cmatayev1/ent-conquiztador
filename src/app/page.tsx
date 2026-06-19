@@ -1,16 +1,32 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-slate-950 text-white p-8">
+    <main
+      className="flex min-h-screen items-center justify-center p-8"
+      style={{ background: "#0c2832" }}
+    >
       <div className="text-center max-w-xl">
-        <h1 className="text-5xl sm:text-7xl font-black tracking-tight bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent mb-4">
-          ENT-Завоеватель
+        <h1
+          className="text-5xl font-black tracking-tight sm:text-7xl"
+          style={{ color: "#f5b82e" }}
+        >
+          ENT-Бәйге
         </h1>
-        <p className="text-blue-200 italic text-lg mb-8">
-          Завоюй карту Казахстана знаниями
+        <p className="mt-3 text-lg font-semibold text-[#9fd0db]">
+          Скачки по степи знаний
         </p>
-        <p className="text-slate-400 text-sm">
-          Coming soon — игра запускается Che tam brat.
+        <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-[#7fb0bd]">
+          Отвечай на вопросы ЕНТ быстрее соперников и веди своего скакуна через
+          Казахстан к финишу.
         </p>
+        <Link
+          href="/play"
+          className="mt-8 inline-block rounded-2xl px-10 py-4 text-lg font-black uppercase tracking-wide transition-transform hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          style={{ background: "#f5b82e", color: "#0c2832" }}
+        >
+          Играть
+        </Link>
       </div>
     </main>
   );
