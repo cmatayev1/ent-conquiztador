@@ -20,7 +20,7 @@ interface QuestionPanelProps {
   t: RaceStrings;
 }
 
-const LETTERS = ["A", "B", "C", "D"];
+const LETTERS = ["A", "B", "C", "D", "E"];
 
 export default function QuestionPanel({
   question,

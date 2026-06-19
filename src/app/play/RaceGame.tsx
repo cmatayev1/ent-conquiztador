@@ -21,7 +21,7 @@ const TOTAL_MS = QUESTION_TIME * 1000;
 const HUMAN_ID = "p1";
 
 export default function RaceGame() {
-  const [lang, setLang] = useState<Lang>("ru");
+  const [lang, setLang] = useState<Lang>("kk");
   const [mode] = useState<GameMode>("ai"); // hotseat comes later
   const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
   const [race, setRace] = useState<RaceState | null>(null);

@@ -72,6 +72,7 @@ export const I18N: Record<Lang, RaceStrings> = {
     subjects: {
       history_kz: "История Казахстана",
       math: "Математика",
+      math_literacy: "Математическая грамотность",
       reading: "Русский язык",
       physics: "Физика",
       chemistry: "Химия",
@@ -117,6 +118,7 @@ export const I18N: Record<Lang, RaceStrings> = {
     subjects: {
       history_kz: "Қазақстан тарихы",
       math: "Математика",
+      math_literacy: "Математикалық сауаттылық",
       reading: "Орыс тілі",
       physics: "Физика",
       chemistry: "Химия",

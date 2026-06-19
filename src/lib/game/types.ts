@@ -24,9 +24,9 @@ export interface Question {
   t: string;
   /** the question text */
   q: string;
-  /** four answer options */
-  a: [string, string, string, string];
-  /** index 0-3 of the correct option */
+  /** answer options (ENT uses 5; a few have 4 — variable length) */
+  a: string[];
+  /** index of the correct option (0-based) */
   c: number;
 }
 
